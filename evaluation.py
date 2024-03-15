@@ -6,11 +6,11 @@ import time
 import random
 from selenium.webdriver.common.action_chains import ActionChains
 
-usrname = '2023224020193'
-password = 'cf11012011980@LTF'
+usrname = ''
+password = ''
 
 # 初始化浏览器为chrome
-service = Service('D:/Workspace/EvaluationofTeaching/chromedriver.exe')
+service = Service('./chromedriver.exe')
 driver = webdriver.Chrome(service=service)
 actions = ActionChains(driver)
 
