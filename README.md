@@ -8,6 +8,11 @@
 ```python
 service = Service('./chromedriver.exe')
 ```
+**selenium**
+```bash
+pip install selenium
+```
+
 ## 用户信息
 在`evaluation.py`文件中以下代码中添加用户信息，脚本可以在浏览器的登录页自动填充
 ```python
@@ -22,7 +27,7 @@ time.sleep(7)
 
 ## 使用说明
 运行脚本
-```shell
+```bash
 python evaluation.py
 ```
 等待脚本自动打开浏览器后，手动输入验证码，输入完毕后即可等待脚本运行（注：不需要点击登录按键，脚本会自动点击跳转，如果手动单击会因为提前跳转而运行失败）
