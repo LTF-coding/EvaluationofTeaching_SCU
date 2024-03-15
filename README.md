@@ -1,6 +1,6 @@
 # 四川大学研究生教务系统一键自动评教脚本
 ## 安装
-*chromedriver*
+**chromedriver**
 
 下载对应版本的[chromedriver](https://chromedriver.chromium.org/downloads)，本文件自带的版本为更新时最新版的驱动，版本号：122.0.6261.111
 
@@ -30,13 +30,15 @@ python evaluation.py
 ## 评分参数更改
 脚本中评分表中的选项为随机选择前两项，填写评语为‘老师讲的很好’，可以在代码中更改
 
-*表单选项*
+**表单选项**
+
 `.format()`中指定直接指定第几项
 ```python
 choice_1 = driver.find_element(by=By.XPATH, value='//*[@id="nr_f9914f972dcf4bd4b847fb49f38a8757"]/div/label[{}]/span'.format(random.choice([1,2])))
 choice_1.click()
 ```
-*评语*
+**评语**
+
 `.send_keys('老师讲的很好！')`中更改评语
 ```python
 textarea.send_keys('老师讲的很好！')
